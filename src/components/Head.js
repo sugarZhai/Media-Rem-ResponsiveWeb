@@ -45,10 +45,10 @@ position:relative;
     align-items:center;
     height:0.8533rem;
     padding:0 0.4267rem;
+    font-size:16px;
     >i{
-      width:0.5867rem;
-      height:0.32rem;
-      padding-right:0.16rem;
+      font-size:18px;
+      padding-right:20px;
     }
   }
 }
@@ -77,14 +77,14 @@ class Head extends React.Component {
         {
           showSign&&(
             <div className="signSty" onClick={()=>{this.store.changeStoreValue('showSign',!showSign)}}>
-            <div>
-             <i className="icon-id-card fonts"></i>
-             Profile
-            </div>
-            <div style={{background:'#efefef'}}>
-             <i className="icon-sign-in fonts"></i>
-             Sign Out
-            </div>
+              <div>
+              <i className="icon-id-card fonts"></i>
+              Profile
+              </div>
+              <div style={{background:'#efefef'}}>
+                <i className="icon-sign-in fonts"></i>
+                Sign Out
+              </div>
          </div>
           )
         }

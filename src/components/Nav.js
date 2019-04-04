@@ -11,7 +11,7 @@ font-size:0;
     display:flex;
     justify-content:flex-start;
     .navTitle{
-      width:7.1467rem;
+      width:268.0013px;
       background:#2d4054;
       position:relative;
       .titleLi{

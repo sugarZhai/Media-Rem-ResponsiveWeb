@@ -63,6 +63,7 @@ font-size:0;
   }
   .build{
     >div{
+      display:inline-block;
       margin:auto;
       width:2.9333rem;
       height:2.9333rem;
@@ -70,11 +71,17 @@ font-size:0;
 	    -webkit-animation:myFirst 2s linear infinite;/* Safari and Chrome */
       border-radius:2.6667rem;
       >i{
+        display:inline-block;
         opacity:0.2;
-        font-size:3.2rem;
+        font-size:120px;
         border-radius:2.6667rem;
         width:2.9333rem;
         height:2.9333rem;
+        i::before{
+          display:inline-block;
+          width:2.9333rem;
+          height:2.9333rem;
+        }
      }
     }
     @keyframes myFirst
@@ -85,9 +92,9 @@ font-size:0;
         -webkit-transform:rotate(0deg);
       }
       to {
-        transform:rotate(45deg);
-        -ms-transform:rotate(45deg);
-        -webkit-transform:rotate(45deg);
+        transform:rotate(360deg);
+        -ms-transform:rotate(360deg);
+        -webkit-transform:rotate(360deg);
       }
     }
 
@@ -99,9 +106,9 @@ font-size:0;
         -webkit-transform:rotate(0deg);
       }
       to {
-        transform:rotate(45deg);
-        -ms-transform:rotate(45deg);
-        -webkit-transform:rotate(45deg);
+        transform:rotate(360deg);
+        -ms-transform:rotate(360deg);
+        -webkit-transform:rotate(360deg);
       }
     }
   }
