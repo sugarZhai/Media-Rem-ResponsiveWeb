@@ -3,8 +3,6 @@
 
 ## CSS Media媒体查询
 本次作业主要考查在不使用第三方框架的情况，通过 @media 多媒体查询来适配不同屏幕分辨率下样式布局
-通过本次作业也对css @media有了更深一次的理解，整理总结文档预览
-https://blog.csdn.net/dodott/article/details/74331840
 
 ### 关于rem单位计算
 head引入计算html元素font-size的脚本，html标签会自动设置fontize属性，具体就是 1rem = CSS屏幕宽度的1/10，
