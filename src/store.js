@@ -15,6 +15,9 @@ class Store {
   @observable all=0
   @observable physical=0
   @observable virtual=0
+  @observable tabIndex=0
+  @observable searchValue=''
+  @observable screenType=0//0:<=768 1:768-1024 2:1024-1200 3:1200
   @action
   changeStoreValue(type, value) {
     this[type] = value

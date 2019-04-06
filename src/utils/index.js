@@ -23,11 +23,12 @@ export const  navInfo=[
   {icon:'icon-life-bouy fonts',txt:'HELP'},
 ]
 export const historyInfo=[
-  'bjstdmngbgr01/Acceptance_test...',
-  'bjstdmngbgr02/Acceptance_test...',
-  'bjstdmngbgr03/Acceptance_test...',
-  'bjstdmngbgr04/Acceptance_test...',
-  'bjstdmngbgr05/Acceptance_test...',
-  'bjstdmngbgr06/Acceptance_test...',
-  'bjstdmngbgr07/Acceptance_test...'
+  'bjstdmngbgr01/Acceptance_test..',
+  'bjstdmngbgr02/Acceptance_test..',
+  'bjstdmngbgr03/Acceptance_test..',
+  'bjstdmngbgr04/Acceptance_test..',
+  'bjstdmngbgr05/Acceptance_test..',
+  'bjstdmngbgr06/Acceptance_test..',
+  'bjstdmngbgr07/Acceptance_test..'
 ]
+export const tabType=['All','Physical','Virtual']

@@ -1,0 +1,58 @@
+import styled from 'styled-components'
+export const NavContainer = styled.div`
+background:#f3f3f3;
+font-size:0;
+.navSty{
+    display:flex;
+    justify-content:flex-start;
+    .navTitle{
+      background:#2d4054;
+      position:relative;
+      .titleLi{
+        list-style:none;
+        >li{
+          height:0.6133rem;
+          line-height:0.6133rem;
+          padding-left:0.4rem;
+          display:flex;
+          align-items:center;
+          font-size:0.1867rem;
+          color:#c7ccd2;
+          >i{
+            width:0.32rem;
+            color:white;
+          }
+        }
+        .navActive{
+          background:#435466;
+          color:#00b4cf;
+          >i{
+            color:#00b4cf;
+          }
+        }
+      }
+      .historyLi{
+        margin:5.3333rem 0 1.3333rem 0;
+        padding-left:0.2133rem;
+        >span{
+          font-size:0.2667rem;
+          color:#c7ccd2;
+          padding-bottom:0.5333rem;
+        }
+        >li{
+          font-size:0.16rem;
+          color:#999;
+          height:0.3467rem
+          >span{
+            padding-right:0.1333rem;
+            text-align:center;
+            font-size:0.1333rem
+          }
+        }
+        .hisActive{
+          color:#00b4cf;
+        }
+      }
+    }
+  }
+`
