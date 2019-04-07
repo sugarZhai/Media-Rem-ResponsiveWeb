@@ -14,9 +14,16 @@ head引入计算html元素font-size的脚本，html标签会自动设置fontize�
 ## 状态管理 Mobx
 使用 Mobx 进行状态管理，注册 store 位置 /src/store/index.js，开发工具:可安装谷歌插件 => Mobx Developer Tools
 
+## 关于性能优化
+media媒介查询适配不同宽度
+rem根据font-size等比例自适应布局
+静态资源进行无损压缩
+如有cdn资源加载，可使用懒加载模式进行渲染
+
 ## 使用步骤
 npm install
 npm run dev
 localhost:3000
+
 ## 在线预览
 

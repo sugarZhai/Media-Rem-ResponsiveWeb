@@ -11,6 +11,10 @@ export default class Tab extends React.Component {
     super(props)
     this.store = initializeStore()
   }
+  changeTab(i){
+    this.store.changeStoreValue('tabIndex',i)
+    this.store.getTabBody(i)
+  }
   render() {
     const {tabIndex,searchValue}=this.store
     return (
@@ -21,7 +25,7 @@ export default class Tab extends React.Component {
               <div 
                 className={index===tabIndex?"tabFlex activeTab" :"tabFlex"}
                 key={index}
-                onClick={()=>{this.store.changeStoreValue('tabIndex',index)}}
+                onClick={()=>{this.changeTab(index)}}
               > {item}
               </div>
             ))
