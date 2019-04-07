@@ -39,6 +39,15 @@ export default class Mask extends React.Component {
              )
            }
         </div>
+        {
+           screenType===0&&(
+            <div className="countFlex">
+              <div><p>ALL</p><b>{all}</b></div>
+              <div><p>PHYSICAL</p><b>{physical}</b></div>
+              <div><p>VIRTUAL</p><b>{virtual}</b></div>
+            </div>
+           )
+        }
       </MaskContainer>
     )
   }

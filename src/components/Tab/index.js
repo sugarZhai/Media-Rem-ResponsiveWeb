@@ -16,7 +16,7 @@ export default class Tab extends React.Component {
     this.store.getTabBody(i)
   }
   render() {
-    const {tabIndex,searchValue}=this.store
+    const {tabIndex,searchValue,screenType}=this.store
     return (
       <TabContainer>
         <div className="tabSty">
@@ -30,14 +30,19 @@ export default class Tab extends React.Component {
               </div>
             ))
           }
-          <div className="inputSty">
-             <i className="icon-search fonts"></i>
-             <input value={searchValue} onChange={(e)=>{this.store.changeStoreValue('searchValue',e.target.value)}}/>
-             <div className="inputIcon">
-                <i className="icon-th-card fonts"></i>
-                <i className="icon-th-list fonts colorI"></i>
+          {
+            screenType!==0&&(
+              <div className="inputSty">
+                <i className="icon-search fonts"></i>
+                <input value={searchValue} onChange={(e)=>{this.store.changeStoreValue('searchValue',e.target.value)}}/>
+                <div className="inputIcon">
+                  <i className="icon-th-card fonts"></i>
+                  <i className="icon-th-list fonts colorI"></i>
+                </div>
              </div>
-          </div>
+            )
+          }
+        
         </div>
       </TabContainer>
     )

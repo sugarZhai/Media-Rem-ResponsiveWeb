@@ -3,7 +3,10 @@
 
 ## CSS Media媒体查询
 本次作业主要考查在不使用第三方框架的情况，通过 @media 多媒体查询来适配不同屏幕分辨率下样式布局
-
+@media screen and (max-width:768px)
+@media screen and (min-width:768px) and (max-width:1024px)
+@media screen and (min-width:1024px) and (max-width:1200px)
+@media screen and (min-width:1200px)
 ### 关于rem单位计算
 head引入计算html元素font-size的脚本，html标签会自动设置fontize属性，具体就是 1rem = CSS屏幕宽度的1/10，
 为提高开发效率px2rem工具，可以安装vs code插件*px to rem*来实现

@@ -5,10 +5,10 @@ export const MaskContainer = styled.div`
   justify-content:space-between;
   align-items:center;
   font-size:0;
-  .setRate{
-     /* animation:myFirst 2s;
-	   -webkit-animation:myFirst 2s linear infinite; */
-  }
+  /* .setRate{
+     animation:myFirst 2s;
+	   -webkit-animation:myFirst 2s linear infinite;
+  } */
   .maskFlex{
     width:30%;
     flex:0 0 30%;
@@ -78,9 +78,21 @@ export const MaskContainer = styled.div`
   }
 }
 @media screen and (max-width:768px){
-  .countFlex{
-    width:100%;
-    flex:1;
+  .maskSty{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    font-size:0;
+    .maskFlex{
+      flex:0 0 47%;
+      background:#ff9A2A;
+      text-align:center;
+      color:white;
+      position:relative;
+    }
+}
+.countFlex{
+    margin-top:0.2667rem;
     background:white;
     text-align:center;
     color:#2d4054;

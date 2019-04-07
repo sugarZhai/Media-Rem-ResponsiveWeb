@@ -17,7 +17,7 @@ export default class Main extends React.Component {
       <MainContainer>
         <Mask/>
         <Tab/>
-        <List/>
+        {/* <List/> */}
       </MainContainer>
     )
   }
