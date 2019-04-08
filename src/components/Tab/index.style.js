@@ -21,6 +21,7 @@ font-size:0;
     color:#00b4cf;
     border-bottom:0.0267rem solid #00b4cf;
   }
+ 
   .inputSty{
     margin-left:0.5333rem;
     flex:1;
@@ -53,4 +54,25 @@ font-size:0;
     }
   }
 }
+@media screen and (max-width:768px){
+    .tabSty{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        .tabFlex{
+          flex:0 0 33%;
+          width:33%;
+          text-align:center;
+          height:0.6667rem;
+          font-size:0.2133rem;
+          line-height:0.6667rem;
+          color:#2d4054;
+          border-right:0.0133rem solid #f3f3f3;
+        }
+        .activeTab{
+          color:#00b4cf;
+          border-bottom:0.0267rem solid #00b4cf;
+        }
+    }
+  }
 `
