@@ -42,6 +42,7 @@ position:relative;
   padding:0.1333rem 0;
   box-shadow:0.0267rem 0.0267rem 0.0267rem 0.0267rem #e6e6e6;
   background:white;
+  z-index:1;
   >div{
     display:flex;
     align-items:center;

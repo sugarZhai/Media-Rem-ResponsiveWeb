@@ -185,7 +185,7 @@ font-size:0;
               z-index:2;
               width:98%;
               text-align:center;
-              padding:0.2133rem 0.1333rem 0.16rem 0.1333rem;
+              padding:0.5333rem 0.1333rem 0.32rem 0.1333rem;
             >i{
               font-size:0.24rem;
               color:#00b4cf;
@@ -196,7 +196,7 @@ font-size:0;
             >p{
               font-size:0.16rem;
               color:#2d4054;
-              padding-bottom:0.2133rem;
+              padding-bottom:0.4rem;
               background:none;
             }
             >input{
