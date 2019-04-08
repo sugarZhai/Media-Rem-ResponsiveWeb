@@ -1,15 +1,6 @@
-import {
-  action,
-  observable
-} from 'mobx'
-import {
-  useStaticRendering
-} from 'mobx-react'
-import {
-  physicalInfo,
-  virtualInfo,
-  getTabBody
-} from '../src/utils'
+import {action,observable} from 'mobx'
+import {useStaticRendering} from 'mobx-react'
+import {physicalInfo,virtualInfo,} from '../src/utils'
 const isServer = !process.browser
 useStaticRendering(isServer)
 

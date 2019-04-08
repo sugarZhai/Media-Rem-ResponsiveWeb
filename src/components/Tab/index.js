@@ -19,6 +19,14 @@ export default class Tab extends React.Component {
     const {tabIndex,searchValue,screenType}=this.store
     return (
       <TabContainer>
+         {
+            screenType===0&&(
+              <div className="inputSty">
+                <i className="icon-search fonts"></i>
+                <input value={searchValue} onChange={(e)=>{this.store.changeStoreValue('searchValue',e.target.value)}}/>
+             </div>
+            )
+        }
         <div className="tabSty">
           {
             tabType.map((item,index)=>(

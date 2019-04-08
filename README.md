@@ -29,4 +29,6 @@ npm run dev
 localhost:3000
 
 ## 在线预览
+https://homework.zhaishuang.now.sh/
+不同设备刷新页面
 

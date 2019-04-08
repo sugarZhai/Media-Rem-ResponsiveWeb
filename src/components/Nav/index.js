@@ -15,16 +15,18 @@ export default class Nav extends React.Component {
     if (typeof window !== 'undefined') {
      let currentWidth=document.body.offsetWidth||document.body.clientWidth
      let screenType=3
-     if(currentWidth<768){
-      screenType=0
-      let navDom=document.getElementById('nav')
-      navDom.style.display = 'none'
-     }else if(currentWidth>768&&currentWidth<=1024){
-        screenType=1
-     }else if(currentWidth>1024&&currentWidth<=1200){
-        screenType=2
-     }
-     this.store.changeStoreValue('screenType',screenType)
+    //  window.onresize=()=>{
+      if(currentWidth<768){
+        screenType=0
+        let navDom=document.getElementById('nav')
+        navDom.style.display = 'none'
+       }else if(currentWidth>768&&currentWidth<=1024){
+          screenType=1
+       }else if(currentWidth>1024&&currentWidth<=1200){
+          screenType=2
+       }
+       this.store.changeStoreValue('screenType',screenType)
+    //  }
     }
   }
   render() {

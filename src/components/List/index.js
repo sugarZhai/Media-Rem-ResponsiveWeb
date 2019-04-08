@@ -23,11 +23,11 @@ export default class List extends React.Component {
       this.store.changeStoreValue('addModal',true)
   }
   render() {
-    const {tabBody,addModal,addBrowser,addIndex}=this.store
+    const {tabBody,addModal,addBrowser,addIndex,screenType}=this.store
     return (
       <ListContainer>
         {
-         tabBody&&tabBody.map((item,index)=>(
+         screenType!==0&&tabBody&&tabBody.map((item,index)=>(
             <div className="listSty" key={index}>
                 <img src={item.img}/>
                 <div className="listFlex">
@@ -80,6 +80,65 @@ export default class List extends React.Component {
                     </div>
                 </div>
                
+            </div>
+          ))
+        }
+        {
+         screenType===0&&tabBody&&tabBody.map((item,index)=>(
+            <div className="listSty" 
+                  key={index} 
+                 style={{borderLeft:item.status==='building'?'0.1067rem solid #ff9a2a':'0.1067rem solid #7fbc39'}}>
+                <div className="listFlex">
+                  <div className="up"> 
+                    <i className="icon-desktop fonts"></i> 
+                    <b>{item.desc}</b>
+                  </div>
+                  <div className="up">
+                    <i className="icon-info fonts"></i> 192.168.1.102
+                  </div>
+                  <div className="up">
+                     <i className="icon-folder fonts"></i>/var/lib/cruise-agent
+                  </div>
+                  <div className="down">
+                    <div>
+                      <i className="icon-plus fonts add" onClick={()=>{this.showAddModal(index)}}></i>
+                      {
+                        item.browserInfo.map((o,i)=>(
+                          <p 
+                           key={i} 
+                           onClick={()=>{this.store.handleRes(index,'del',i)}}>
+                          {o}<i className="icon-trash fonts"></i></p>
+                        ))
+                      }
+                    </div>
+                    {
+                      item.status==='building'&&(
+                        <div className="right">
+                          <i className="icon-deny fonts"></i> Deny
+                        </div>
+                      )
+                    }
+                    {
+                      addIndex===index&&addModal&&(
+                        <div className="phoneAdd">
+                          <div className="phoneModal">
+                            <i className="icon-close fonts" onClick={()=>{this.store.changeStoreValue('addModal',false)}}></i>
+                            <p>Separate multiple resource name with commas</p>
+                            <input 
+                              value={addBrowser} 
+                              placeholder='Input Value'
+                              onChange={(e)=>{this.store.changeStoreValue('addBrowser',e.target.value)}}
+                            />
+                            <div className="addBtn">
+                              <p onClick={()=>{this.addRes(index)}}>Add Resources</p>
+                              <p className="cancel" onClick={()=>{this.store.changeStoreValue('addModal',false)}} >Cancel</p>
+                            </div>
+                          </div>
+                        </div>
+                      )
+                    }
+                    </div>
+                </div>
             </div>
           ))
         }

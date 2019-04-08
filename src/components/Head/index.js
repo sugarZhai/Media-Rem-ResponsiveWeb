@@ -12,10 +12,15 @@ export default class Head extends React.Component {
     this.store = initializeStore()
   }
   render() {
-    const {showSign}=this.store
+    const {showSign,screenType}=this.store
     return (
       <Container>
         <Logo/>
+        {
+          screenType===0&&(
+            <i className="icon-navicon fonts phoneIcon"></i>
+          )
+        }
         <div className="userSty" onClick={()=>{this.store.changeStoreValue('showSign',!showSign)}}>
           <img src={`/static/img/head.png`}/>
           <i className={showSign?'icon-angle-up fonts':'icon-angle-down fonts'}></i>

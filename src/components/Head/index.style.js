@@ -6,6 +6,13 @@ text-align:center;
 background:white;
 box-shadow:0 0.08rem 0.0533rem #e6e6e6;
 position:relative;
+.phoneIcon{
+  position:absolute;
+  left:0.3733rem;
+  top:0.1867rem;
+  font-size:0.48rem;
+  color:#2d4054;
+}
 >svg{
   width:2.6667rem;
   height:0.4rem;

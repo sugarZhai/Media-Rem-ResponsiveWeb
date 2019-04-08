@@ -5,10 +5,10 @@ export const MaskContainer = styled.div`
   justify-content:space-between;
   align-items:center;
   font-size:0;
-  /* .setRate{
+  .setRate{
      animation:myFirst 2s;
 	   -webkit-animation:myFirst 2s linear infinite;
-  } */
+  }
   .maskFlex{
     width:30%;
     flex:0 0 30%;
